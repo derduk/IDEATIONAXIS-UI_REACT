@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+}
+
+/* Header component */
+.header {
+  border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.headOne {
+  display: flex;
+  background-color: #009879;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.headOne .user {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.headTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid gainsboro;
+  background-color: white;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav ul li a:hover{
+  opacity: 0;
+    transform: translateX(50px);
+    animation: slideIn 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--i)); /* Delay based on item index */
+    list-style: none;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-list li:nth-child(1) { --i: 1; }
+.slide-list li:nth-child(2) { --i: 2; }
+.slide-list li:nth-child(3) { --i: 3; }
+.slide-list li:nth-child(4) { --i: 4; }
+.nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  border-bottom: 2px solid #009879;
+}
+
+.nav a:active {
+  border-bottom: 2px solid #009879;
+}
+
+.main {
+  background-color: gainsboro;
+}
+
+.language select {
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.language select:focus {
+  outline: 1px solid #009879;
+}

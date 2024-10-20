@@ -1,0 +1,123 @@
+.headSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+}
+
+.customerName {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.customerCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 30px 10px;
+  
+  margin-top: -1rem;
+  /* gap: 10px; */
+}
+
+.date input,
+.addCustomer button {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.date input:focus {
+  outline: none;
+}
+
+.date input:hover {
+  cursor: pointer;
+}
+
+.addCustomer button {
+  background-color: red;
+  color: white;
+}
+
+.addCustomer button:hover {
+  background-color: darkred;
+  cursor: pointer;
+}
+
+.cardOne,
+.cardTwo,
+.cardThree,
+.cardFour {
+  width: 18rem;
+  height: 30vh;
+  /* background-color: green; */
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.cardOne,
+.cardTwo,
+.cardThree,
+.cardFour:hover {
+  cursor: pointer;
+}
+
+.cardOne:hover,
+.cardTwo:hover,
+.cardThree:hover,
+.cardFour:hover{
+  background-color: #f0f0f0;
+  transform: translateY(-5px);
+  transition: 0.4s ease;
+  transform: 0.3s ease;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardHead {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 20px;
+  margin-top: -15px;
+}
+
+.number {
+  font-size: 3.5rem;
+  display: flex;
+}
+
+.percent {
+  /* background-color: rgb(179, 224, 111); */
+  height: 20px;
+  margin-left: -1px;
+  font-weight: bold;
+}
+
+.One,
+.Two,
+.Three {
+  color: green;
+  border: 1px solid green;
+}
+
+.Four {
+  color: red;
+  border: 1px solid red;
+}
+
+.theDate {
+  font-size: 0.7rem;
+  color: gray;
+}
